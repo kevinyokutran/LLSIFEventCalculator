@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">LLSIF Event Calculator</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="selection">Choose the event type</string>
+    <string name="title_activity_token">TokenActivity</string>
+    <string name="userLP">Enter your Max LP</string>
+    <string name="userDifficulty">Enter your Max LP</string>
+
+    <string-array name="difficulty">
+        <item>Expert</item>
+        <item>Hard</item>
+        <item>Normal</item>
+        <item>Easy</item>
+    </string-array>
+    <string-array name="token_difficulty">
+        <item>Expert</item>
+        <item>Hard</item>
+        <item>Hard4x</item>
+        <item>Normal</item>
+        <item>Normal4x</item>
+        <item>Easy</item>
+        <item>Easy4x</item>
+    </string-array>
+    <string-array name="medley_difficulty">
+        <item>Expert3</item>
+        <item>Hard3</item>
+        <item>Hard2x</item>
+        <item>Normal3</item>
+        <item>Normal2</item>
+        <item>Easy3</item>
+        <item>Easy2</item>
+    </string-array>
+    <string-array name="rankings">
+        <item>S</item>
+        <item>A</item>
+        <item>B</item>
+        <item>C</item>
+        <item>-</item>
+    </string-array>
+    <string-array name="placing">
+        <item>1st</item>
+        <item>2nd</item>
+        <item>3rd</item>
+        <item>4th</item>
+        <item>Fail</item>
+    </string-array>
+    <string-array name="numbers">
+        <item>3</item>
+        <item>2</item>
+        <item>1</item>
+    </string-array>
+
+    <string name="title_activity_score">ScoreActivity</string>
+    <string name="title_activity_medley">MedleyActivity</string>
+    <string name="title_activity_result">ResultActivity</string>
+    <string name="title_activity_token_activity2">TokenActivity2</string>
+    <string name="title_activity_score_activity2">ScoreActivity2</string>
+    <string name="title_activity_medley_activity2">MedleyActivity2</string>
+
+</resources>

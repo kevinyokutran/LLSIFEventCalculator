@@ -1,0 +1,107 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:context="com.example.kevinytran.llsifeventcalculator.ResultActivity"
+    android:background="@drawable/eli" >
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Loveca"
+        android:id="@+id/lovecaTV"
+        android:layout_marginTop="127dp"
+        android:gravity="left"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_toStartOf="@+id/lovecaTV2" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:id="@+id/naturalTV"
+        android:gravity="left"
+        android:layout_below="@+id/lovecaTV"
+        android:layout_alignStart="@+id/lovecaTV"
+        android:text="Natural Points"
+        android:layout_toStartOf="@+id/naturalTV2" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:id="@+id/timeTV"
+        android:gravity="left"
+        android:layout_below="@+id/songPlaysTV"
+        android:layout_alignLeft="@+id/songPlaysTV"
+        android:layout_alignStart="@+id/songPlaysTV"
+        android:text="Time Needed" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:id="@+id/songPlaysTV"
+        android:layout_below="@+id/naturalTV"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:text="Plays Needed" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Large Text"
+        android:id="@+id/lovecaTV2"
+        android:layout_above="@+id/naturalTV"
+        android:gravity="right"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_toRightOf="@+id/songPlaysTV"
+        android:layout_toEndOf="@+id/songPlaysTV" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Large Text"
+        android:id="@+id/naturalTV2"
+        android:layout_below="@+id/lovecaTV2"
+        android:gravity="right"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_toEndOf="@+id/lovecaTV"
+        android:layout_toRightOf="@+id/lovecaTV"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Large Text"
+        android:id="@+id/songPlaysTV2"
+        android:gravity="right"
+        android:layout_above="@+id/timeTV2"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_toRightOf="@+id/songPlaysTV"
+        android:layout_toEndOf="@+id/songPlaysTV" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Large Text"
+        android:id="@+id/timeTV2"
+        android:gravity="right"
+        android:layout_alignTop="@+id/timeTV"
+        android:layout_alignRight="@+id/songPlaysTV2"
+        android:layout_alignEnd="@+id/songPlaysTV2"
+        android:layout_toRightOf="@+id/songPlaysTV"
+        android:layout_toEndOf="@+id/songPlaysTV" />
+
+</RelativeLayout>

@@ -1,0 +1,202 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:label="Page 2/2"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:context="com.example.kevinytran.llsifeventcalculator.ScoreActivity2"
+    android:id="@+id/tokenActivity2"
+    android:background="@drawable/umi" >
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Event Live Difficulty "
+        android:id="@+id/difficultyTV"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Event Live Score"
+        android:id="@+id/scoreTV"
+        android:layout_below="@+id/difficultySpinner"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop = "15dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Event Live Placing"
+        android:id="@+id/comboTV"
+        android:layout_below="@+id/scoreSpinner"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop = "15dp"/>
+
+    <Spinner
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/difficultySpinner"
+        android:entries="@array/token_difficulty"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_toRightOf="@+id/difficultyTV"
+        android:layout_toEndOf="@+id/difficultyTV"
+        android:gravity="right" />
+
+    <Spinner
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/scoreSpinner"
+        android:entries="@array/rankings"
+        android:layout_alignTop="@+id/scoreTV"
+        android:layout_alignLeft="@+id/difficultySpinner"
+        android:layout_alignStart="@+id/difficultySpinner"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:gravity="right" />
+
+    <Spinner
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/comboSpinner"
+        android:entries="@array/placing"
+        android:layout_alignTop="@+id/comboTV"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignLeft="@+id/scoreSpinner"
+        android:layout_alignStart="@+id/scoreSpinner"
+        android:gravity="right" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Enter your distribution of score matches per loveca refill"
+        android:id="@+id/textView2"
+        android:layout_below="@+id/comboSpinner"
+        android:layout_marginTop = "10dip"
+        android:layout_alignRight="@+id/comboSpinner"
+        android:layout_alignEnd="@+id/comboSpinner" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        android:ems="10"
+        android:id="@+id/expertET"
+        android:layout_below="@+id/textView2"
+        android:layout_toRightOf="@+id/textView3"
+        android:layout_toLeftOf="@+id/nextButton"
+        android:layout_toStartOf="@+id/nextButton"
+        android:gravity="center" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        android:ems="10"
+        android:id="@+id/hardET"
+        android:layout_below="@+id/expertET"
+        android:layout_alignRight="@+id/expertET"
+        android:layout_alignLeft="@+id/expertET"
+        android:layout_alignStart="@+id/expertET"
+        android:gravity="center" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Expert Songs"
+        android:id="@+id/textView3"
+        android:layout_above="@+id/hardET"
+        android:layout_alignRight="@+id/comboTV"
+        android:layout_alignEnd="@+id/comboTV" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Hard Songs"
+        android:id="@+id/textView5"
+        android:layout_alignBottom="@+id/hardET"
+        android:layout_toLeftOf="@+id/hardET"
+        android:layout_toStartOf="@+id/hardET" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        android:ems="10"
+        android:id="@+id/normalET"
+        android:layout_below="@+id/hardET"
+        android:layout_alignRight="@+id/hardET"
+        android:layout_alignEnd="@+id/hardET"
+        android:layout_alignLeft="@+id/hardET"
+        android:layout_alignStart="@+id/hardET"
+        android:gravity="center" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Normal Songs"
+        android:id="@+id/textView6"
+        android:layout_alignBottom="@+id/normalET"
+        android:layout_alignRight="@+id/textView5"
+        android:layout_alignEnd="@+id/textView5"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:gravity="right" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Easy Songs"
+        android:id="@+id/textView7"
+        android:layout_alignBottom="@+id/easyET"
+        android:layout_toLeftOf="@+id/easyET"
+        android:layout_toStartOf="@+id/easyET" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        android:ems="10"
+        android:id="@+id/easyET"
+        android:layout_below="@+id/normalET"
+        android:layout_alignRight="@+id/normalET"
+        android:layout_alignEnd="@+id/normalET"
+        android:layout_alignLeft="@+id/normalET"
+        android:layout_alignStart="@+id/normalET"
+        android:gravity="center" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Calculate"
+        android:id="@+id/nextButton"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Back"
+        android:id="@+id/prevButton"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+</RelativeLayout>
